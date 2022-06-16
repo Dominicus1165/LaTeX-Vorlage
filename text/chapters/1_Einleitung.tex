@@ -1,0 +1,48 @@
+\chapter{Kapiteltitel}
+Etwas Text.
+\section{Beispiel Unterkapitel}
+Etwas Text.
+\subsection{Beispiel Unterunterkapitel}
+Etwas Text.
+\subsubsection{Beispiel Unterunterunterkapitel}
+Etwas Text.
+\paragraph{Beispiel Unterunterunterunterkapitel}         % unnummeriert
+Etwas Text.
+\subparagraph{Beispiel Unterunterunterunterunterkapitel} % unnummeriert
+Etwas Text.
+\section*{Unterkapitel nicht in Inhaltsverzeichnis}      % nicht im Inhaltsverzeichnis
+Etwas Text.
+
+Mit einem \texttt{*} kann man Dinge nicht im Inhaltsverzeichnis aufführen.\\
+Das ist für das \emph{Abstract} relevant, welches mit \texttt{\textbackslash chapter*}\(\{\texttt{Abstract}\}\) eingeleitet wird.
+
+Zitat\cite{zitat}\\
+Zitat\cite[10-20]{zitat}
+
+\newpage
+
+Abkürzungen kommen ins \texttt{glossary.tex}.\\
+Dies geht mit \texttt{\acrfull{Bsp}}\\
+\acrfull{Bsp} oder \acrfullpl{Bsp} kommen zuerst,\\
+dann \acrshort{Bsp} oder \acrlongpl{Bsp}.
+
+\begin{listing}[H]
+    \inputminted{python}{code/beispielcode.py}
+    \caption{Hier etwas Beispielcode}
+    \label{lst:beispielcode.py}
+\end{listing}
+Außerdem noch eine Formel \ref{fkt:Beispielformel}.
+
+\begin{equation}
+    \sin \alpha = \frac{a}{c}
+    \label{fkt:Beispielformel}
+\end{equation}
+
+Und ein Bild \ref{img:Beispielbild} darf auch nicht fehlen.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/Beispielbild.png}
+    \caption{Beispielbild}
+    \label{img:Beispielbild}
+\end{figure}

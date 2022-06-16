@@ -1,0 +1,70 @@
+\pdfminorversion = 7
+
+\KOMAoptions{fontsize=12pt, paper=a4}
+\KOMAoption{listof}{chapterentry}
+
+\newcommand*{\Title}				{Latex Tutorial Beispieltitel}
+\newcommand*{\Author}				{Autor}
+\newcommand*{\Subject}				{\Title} % important for PDF document, just as title
+\newcommand*{\Keywords}				{Einzelne, Stichwörter, für, das, PDF Dokument, Begriffe mit Komma trennen}
+\newcommand*{\SubmissionDate}		{01.01.1900}
+
+\newcommand*{\University}			{Universität der Stadt XX}
+\newcommand*{\Faculty}				{Fakultät für XX}
+\newcommand*{\Institute}			{Institut für XXXX}
+\newcommand*{\StudentID}			{1234567} % Matrikelnummer
+\newcommand*{\DocumentType}			{Typ der Arbeit} % Seminararbeit Bachelorarbeit Masterarbeit
+\newcommand*{\Supervisor}			{Prof. Dr. Toller Professor} % Erstprüfer
+\newcommand*{\CoSupervisor}			{Prof. Dr. Toller Zweitprüfer} % Zweitprüfer
+\newcommand*{\Advisor}				{Dr. Mein Betreuer} % Betreuer
+\newcommand*{\SubmissionLocation}	{Universitätsstadt} % Abgabeort
+
+\setminted{
+	bgcolor=LightGray,
+	xleftmargin=\parindent,
+	linenos,
+	breaklines
+}
+
+\definecolor{LightGray}{gray}{0.95}
+\definecolor{DarkGray}{gray}{0.5}
+
+\mdfdefinestyle{gray_bars}{
+	linecolor			=	DarkGray,
+	topline				=	false,
+	bottomline			=	false,
+	linewidth			=	3,
+	innerleftmargin		=	1.5em,
+	innerrightmargin	=	1.5em,
+	backgroundcolor		=	white
+}
+
+\geometry{top = 4cm, bottom = 3.5cm, inner = 3cm, outer = 2.5cm}	% margins of document
+
+\newcommand*{\leftMargin}			{0.7cm}					% left margin
+\newcommand*{\rightMargin}			{0.7cm}					% right margin
+\newcommand*{\topMargin}			{1cm}					% top margin
+\newcommand*{\bottomMargin}			{1cm}					% bottom margin
+
+\graphicspath{images/}										% image path
+\addbibresource{backend/sources.bib}						% bibliography file
+
+\hypersetup{
+	pdftoolbar	= false,
+	pdftitle	= {\Title},
+	pdfauthor	= {\Author},
+	pdfsubject	= {\Subject},
+	pdfkeywords	= {\Keywords},
+	hidelinks,
+	breaklinks	= true
+}
+
+\MakeOuterQuote{"} % csquotes option: German quotes starting with AEIOU => "A instead of Ä
+
+\emergencystretch = 1cm % prevent Overfull H-Box by breaking line and stretching previous line by up to xx.
+
+\makenoidxglossaries
+\loadglsentries{backend/glossary.tex}
+
+\renewcommand*{\listoflistingscaption}		{Quelltextverzeichnis}	% name of table of code listing
+\renewcommand*{\listingscaption}			{Quelltext}				% caption of code listing

@@ -1,0 +1,49 @@
+\newgeometry{top = 3cm, bottom = 3cm, inner = 2.5cm, outer = 2cm}
+\begin{titlepage}
+	
+	\centering
+% either this
+	\begin{figure}[h]
+	\centering																		% centered
+	\subfigure{\includegraphics[width=0.5\textwidth]{logos/Signet.eps}}				% image 1
+	\hfill
+	\subfigure{\includegraphics[width=0.35\textwidth]{logos/Logo.png}}				% image 2
+	\end{figure}
+% or this
+	% \begin{figure}[h]
+	% 	\centering
+	% 	\includegraphics[width=0.9\textwidth]{logos/Signet.eps}}
+	% 	\subfigure{\includesvg[width=0.35\textwidth]{logos/AirbusDefenseandSpace.svg}}
+	% \end{figure}
+
+	{\scshape\LARGE \Faculty \par}
+	{\scshape \Institute \par}
+	\vspace{2cm}
+	
+	{\scshape\Large \DocumentType\par}
+	\vspace{1cm}
+	
+	{\huge\bfseries \Title\par}
+	\vspace{0.5cm}
+
+	{\Large\scshape \Author\par}
+	Matrikelnummer: \textsc{\StudentID} \par
+	
+	\vfill
+	
+	Aufgabenstellung:\par
+	\textsc{\Supervisor} \par
+	Zweitprüfer:\par
+	\textsc{\CoSupervisor}
+	
+	\vspace{0.5cm}
+
+	Betreuer:\par
+	\textsc{\Advisor}
+	
+	\vfill
+	
+	% Bottom of the page
+	
+	\textsc{\SubmissionLocation}, den \textsc{\SubmissionDate}
+\end{titlepage}

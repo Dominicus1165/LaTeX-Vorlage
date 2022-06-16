@@ -1,0 +1,4 @@
+{"rule":"GERMAN_SPELLER_RULE","sentence":"^\\Qlistof chapterentry\\E$"}
+{"rule":"UNPAIRED_BRACKETS","sentence":"^\\Q\"\\E$"}
+{"rule":"EINHEIT_LEERZEICHEN","sentence":"^\\Q2mm *\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QBetreuer: , den\\E$"}

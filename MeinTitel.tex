@@ -1,0 +1,31 @@
+\documentclass{scrbook}						% book, letter, report, article, ...
+
+\input{backend/packages}					% modify to add packages
+\input{backend/commands}					% modify to add commands
+
+\begin{document}
+
+	\frontmatter 							% ONLY IN BOOK title page, table of contents and prefaces
+	\include{text/additional/Titelseite}	% custom titlepage
+	\restoregeometry						% restore geometry (changed in title page)
+	\tableofcontents						% Inhaltsverzeichnis
+	\listoffigures							% table of images
+	\listoftables							% table of tables
+	\printnoidxglossaries					% table of abbreviations
+	
+	\mainmatter	 							% ONLY IN BOOK main text
+	\parskip 2mm
+	\include{text/chapters/1_Einleitung}
+	\include{text/chapters/2_Grundlagen}
+	\include{text/chapters/3_StandForschung}
+	\include{text/chapters/4_Methodik}
+	\include{text/chapters/5_AnalyseErgebnisse}
+	\include{text/chapters/6_Fazit}
+	
+	\appendix
+	\backmatter  							% ONLY IN BOOK bibliography, indexes and colophon
+	\nocite{*}								% prints all sources even if not cited
+	\printbibliography
+	\include{text/additional/Abschusserklärung}
+
+\end{document}
