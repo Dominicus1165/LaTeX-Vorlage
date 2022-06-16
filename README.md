@@ -1,2 +1,2 @@
 # LaTeX-Vorlage
-Eine einfache LaTeX Vorlage
+[Zum Wiki gehen](../../wiki)
