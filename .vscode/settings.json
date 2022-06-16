@@ -16,7 +16,8 @@
         "\\cellcolor[]{}": "ignore",
         "\\rotatebox{}{}": "ignore",
         "\\cline{}": "ignore",
-        "\\setminted{}": "ignore"
+        "\\setminted{}": "ignore",
+        "\\KOMAoption{}{}": "ignore",
     },
     "latex-workshop.latex.tools": [
 

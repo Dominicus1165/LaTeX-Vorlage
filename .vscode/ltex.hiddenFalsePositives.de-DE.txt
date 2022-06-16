@@ -1,4 +1,6 @@
-{"rule":"GERMAN_SPELLER_RULE","sentence":"^\\Qlistof chapterentry\\E$"}
-{"rule":"UNPAIRED_BRACKETS","sentence":"^\\Q\"\\E$"}
 {"rule":"EINHEIT_LEERZEICHEN","sentence":"^\\Q2mm *\\E$"}
+{"rule":"EINHEIT_LEERZEICHEN","sentence":"^\\Q= 1cm\\E$"}
+{"rule":"UNPAIRED_BRACKETS","sentence":"^\\Q\"\\E$"}
 {"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QBetreuer: , den\\E$"}
+{"rule":"GERMAN_SPELLER_RULE","sentence":"^\\QFerner habe ich vom Merkblatt über die Verwendung von Bachelor-/Masterabschlussarbeiten Kenntnis genommen und räume das einfache Nutzungsrecht an meiner der (nicht) ein.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\Q, den\\E$"}
